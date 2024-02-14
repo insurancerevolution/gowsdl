@@ -32,6 +32,7 @@ type SOAPEnvelopeResponse struct {
 type SOAPEnvelope struct {
 	XMLName xml.Name      `xml:"soap:Envelope"`
 	XmlNS   string        `xml:"xmlns:soap,attr"`
+	XmlOpen string        `xml:"xmlns:open,attr"`
 	Headers []interface{} `xml:"soap:Header"`
 	Body    SOAPBody
 }
@@ -410,7 +411,8 @@ func (s *Client) call(ctx context.Context, soapAction string, request, response 
 	retAttachments *[]MIMEMultipartAttachment) error {
 	// SOAP envelope capable of namespace prefixes
 	envelope := SOAPEnvelope{
-		XmlNS: XmlNsSoapEnv,
+		XmlNS:   XmlNsSoapEnv,
+		XmlOpen: "www.opengi.co.uk",
 	}
 
 	envelope.Headers = s.headers
