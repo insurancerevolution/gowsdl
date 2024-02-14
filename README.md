@@ -1,5 +1,9 @@
 # WSDL to Go
 
+# WARNING
+
+This is a fork to allow this library to be used with OpenGI's OpenIntegration web service. This will be very little use to anyone else.
+
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hooklift/gowsdl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![GoDoc](https://godoc.org/github.com/hooklift/gowsdl?status.svg)](https://godoc.org/github.com/hooklift/gowsdl)
 [![Build Status](https://travis-ci.org/hooklift/gowsdl.svg?branch=master)](https://travis-ci.org/hooklift/gowsdl)
